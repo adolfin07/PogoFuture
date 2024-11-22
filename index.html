@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>PogoPage</title>
+  <title>PogoNews</title>
   <!--styles-->
   <link rel="stylesheet" href="assets/styles/styles.css">
   <!--script-->
@@ -17,7 +17,12 @@
     rel="stylesheet">
   <!--animate js-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
+  <!--favicon-->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <!--fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -44,10 +49,10 @@
         <nav class="navbar">
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#news">New</a></li>
-            <li><a href="#">Popular</a></li>
-            <li><a href="#">Trending</a></li>
-            <li><a href="#">Categories</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#trending">Trending</a></li>
+            <li><a href="#us">Us</a></li>
           </ul>
         </nav>
       </div>
@@ -175,7 +180,7 @@
 
     </footer>
 
-    <div class="news" id="news">
+    <section class="news" id="news">
       <h2 class="news">News</h2>
 
       <section class="section1">
@@ -240,12 +245,88 @@
         </div>
 
       </section>
-    </div>
+    </section>
 
+    <section class="contact" id="contact">
+      <h2>send us your comments</h2>
 
+      <div class="contact__content">
+        <div class="contact__content-left toRight hidden2">
+          <form action="#">
+
+            <div class="form__info">
+              <div class="form__info-sinputs">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Name">
+
+                <label for="Lname">Last Name</label>
+                <input type="text" name="Lname" placeholder="Last Name">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Email">
+              </div>
+              <div class="form__info-textarea">
+                <label for="textarea">Tell Us</label>
+                <textarea name="textarea" id="textarea"></textarea>
+              </div>
+
+            </div>
+
+            <button type="submit">submit</button>
+
+          </form>
+        </div>
+        <div class="contact__content-right toLeft hidden2">
+          <img src="assets/images/imgComments.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="trending" id="trending">
+
+      <div class="trending__content">
+        <div class="trending__content-left toRight">
+          <div class="img">
+            <img src="assets/images/imgNvidia.jpg" alt="">
+          </div>
+          <div class="txt">
+            <h2>Nvidia</h2>
+            <p>
+              Nvidia is set to release the RTX 5090, focusing on cutting-edge performance for high-end gaming and AI
+              applications. It aims to solidify its dominance in the flagship GPU market with improved computational
+              power and efficiency, maintaining leadership in premium graphics solutions.
+            </p>
+          </div>
+        </div>
+        <div class="trending__content-right toLeft">
+          <div class="txt">
+            <h2>AMD</h2>
+            <p>
+              AMD, on the other hand, is shifting its focus to mid-range GPUs with the upcoming Radeon RX 8000 series,
+              built on the RDNA 4 architecture. This strategy targets affordability and broader market appeal, aiming to
+              grow its presence in the PC gaming segment while avoiding direct competition in the ultra-high-end secto
+            </p>
+          </div>
+          <div class="img">
+            <img src="assets/images/imgamd.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="relase" id="relase">
+      <h2>countdown to possible launch of rtx 5090</h2>
+      <div id="countdown"></div>
+    </section>
 
   </div>
 
+  <footer class="footer" id="us">
+    <p>&copy; by pogo 2025</p>
+  </footer>
+
+  <i class="fa-solid fa-chevron-up toTop"></i>
 </body>
 
 </html>
